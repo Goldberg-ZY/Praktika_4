@@ -1,0 +1,59 @@
+Task_1
+import math
+x = float(input())
+result = math.floor(x) + math.ceil(x)
+print(result)
+
+Task_2
+import math
+x1 = float(input())
+y1 = float(input())
+x2 = float(input())
+y2 = float(input())
+distance = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+print(distance)
+
+Task_3
+number = int(input())
+thousands = number // 1000
+hundreds = number // 100 % 10
+tens = number // 10 % 10
+units = number % 10
+print("Цифра в позиции тысяч равна", thousands)
+print("Цифра в позиции сотен равна", hundreds)
+print("Цифра в позиции десятков равна", tens)
+print("Цифра в позиции единиц равна", units)
+
+Task_4
+n = int(input())
+k = int(input())
+each = k // n
+left = k % n
+print(each)
+print(left)
+
+Task_5
+minutes = int(input())
+hours = minutes // 60
+remaining_minutes = minutes % 60
+print(minutes, "минуты - это", hours, "час", remaining_minutes, "минут.")
+
+
+Task_6
+import math
+x = float(input())
+radians = math.radians(x)
+result = math.sin(radians) + math.cos(radians) + math.tan(radians) ** 2
+print(result)
+
+Task_7
+place = int(input())
+compartment = (place - 1) // 4 + 1
+print(compartment)
+
+Questions
+1-Сначала выполнится умножение 3 * 2, затем сложение 5 + 6. Ответ: 11. Умножение имеет более высокий приоритет, чем сложение
+2-1 Операция % возвращает остаток от деления
+3-False. Операция and возвращает True только тогда, когда оба условия истинны
+4-Функция math.sqrt(x) из модуля math
+5-В калькуляторах, банковских расчётах, подсчёте времени, определении расстояний, обработке координат, инженерных и научных программах
